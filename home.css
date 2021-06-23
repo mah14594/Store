@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    height:100vh;
+}
+/*start of nav*/
+/*Top nav*/ 
+
+.top-nav i{
+    font-size:18px;
+    color:rgb(170, 169, 169);
+
+}
+.left-top{
+    margin: auto;
+    text-align: center;
+}
+.left-top .search{
+    border:none;
+    outline: none;
+    color:rgb(170, 169, 169);
+    color:black;
+    padding-top:10px;
+}
+
+
+.middle-top{
+    text-transform: uppercase;
+    border:2px solid;
+padding-top:10px;
+}
+
+.top-nav .right-top i:hover{
+color: black;
+}
+
+
+/*bottom nav*/ 
+
+.bottom-nav .nav-link{
+    color:rgb(104, 103, 103);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.bottom-nav .nav-link:hover{
+    color: purple;
+}
+.bottom-nav  .active{
+    color:purple;
+    font-weight: 600;
+}
+
+/*end of nav*/
+
+
+
+
+/*start of header*/
+header {
+    margin-top:-16px;
+    background-color:rgb(118, 216, 255);
+    width:100%;
+}
+header .row{
+    padding:100px 20px;
+}
+header h2{
+    font-weight: 900;
+}
+.header-img{
+    width:100%;
+    height:440px;
+}
+header .btn{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width:157px;
+    height:50px;
+    margin-left: -4px;
+    font-size: 15px;
+    padding:15px 29px;
+    color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    border:none;
+    background-color:rgb(134, 45, 134);
+    transition: all 0.5s ease;
+
+}
+header .btn:hover{
+    color:white;
+    transform:scale(1.05);
+    /*it works without overflow-hidden because of class="view"*/
+}
+header p{
+    font-size: 19px;
+}
+
+/*end of header*/
+/*start of services section*/
+.services{
+    padding:30px;
+}
+
+.services h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.services p{
+    margin-left:70px;
+    margin-top:-45px;
+}
+.services h2{
+    margin-left:70px;
+    margin-top:-45px;
+}
+.services i{
+    font-size: 45px;
+    color: rgb(134, 45, 134);
+}
+.fa-truck{
+    transform:rotateY(180deg);
+}
+/*end of services section */
+/*start of categories section*/
+.categ{
+    margin-top:60px;
+    padding-bottom: 50px;
+}
+
+.view-img{
+
+    position: relative;
+    width:100%;
+    transition: transform 0.5s ease;
+   cursor: pointer;
+    
+  }
+  .mask p{
+    font-weight: 600;
+    position: absolute;
+    top:81%;
+    left:7%;
+    font-size:9px;
+    text-transform: uppercase;
+    
+  }
+  .mask h4{
+    
+    position: absolute;
+    top:86%;
+    left:7%;
+    font-size: 25px;
+  }
+  .cat{
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .cat:hover .view-img{
+    transform:scale(1.12)
+  }
+  .cat::after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left:4%;
+    width: 92%;
+    height: 60%;
+    opacity: 0.8;  
+    background: linear-gradient(to top ,#000 20%, transparent );
+  }
+  
+.categ .title2 hr{
+    border-top:4px solid purple;
+    width:8%;
+    margin-left: 46%;
+}
+/*end of categories section*/
+/*start of featured products section*/
+.featured{
+    background-color:rgb(236, 233, 233) ;
+    margin-top:50px;
+    padding:60px;
+    padding-top:35px;
+}
+.featured .title hr{
+    border-top:4px solid purple;
+    width:8%;
+    margin-left: 46%;
+}
+.card{
+    width:100%;
+}
+.card img{
+    height:200px;
+    width:100%;
+}
+.card .card-title ,.card .card-price{
+    color:purple;
+    font-weight: 700;
+}
+/*end of featured products section*/
+/*start of sale section*/
+.sale{
+    margin-top:30px;
+    padding-bottom: 100px;
+}
+.sale .title hr{
+    border-top:4px solid purple;
+    width:6%;
+    margin-left: 47%;
+}
+.sale .sale-img{
+    width:100%;
+}
+.sale h2{
+    color: purple;
+    font-weight:900 ;
+}
+.sale .btn{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width:157px;
+    height:50px;
+    margin-left: -4px;
+    font-size: 15px;
+    padding:15px 29px;
+    color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    border:none;
+    background-color:rgb(134, 45, 134);
+    transition: all 0.5s ease;
+
+}
+.sale .btn:hover{
+    color:white;
+    transform:scale(1.05);
+}
+/*end of sale section*/
+/*start of footer*/
+footer{
+    margin-top:10px;
+    padding:70px 50px 70px 70px; 
+}
+
+footer li{
+    margin-top: 20px;
+}
+footer h5{
+    font-weight: 700;
+}
+
+footer .nav a{
+    color:grey;
+    font-size: 18px;
+}
+footer .nav a:hover{
+    color:purple;
+}
+footer .promo img{
+    width:100%;
+    border-radius: 5px;
+}
+footer .promo a{
+    color:purple;
+    font-size: 20px;
+}
+footer .promo p{
+    color:grey;
+    font-size: 18px;
+}
+footer .contact p{
+    font-size:17px;
+}
+
+.footer-copyright{
+    font-size:18px;
+    color:grey;
+    margin-top:60px;
+}
+footer .contact .fa-phone{
+    transform:rotateY(180deg)
+}
+footer i{
+    color:purple;
+}
+
+footer .subscribe .em{
+    padding:28px;
+    font-size: 20px;
+}
+footer .subscribe .btn1{
+    background-color:purple ;
+    color:white;
+    transition: all 0.5s ease;
+    width:100px;
+    font-size:20px;
+    height:51px;
+    margin-top:3px;
+    border-radius: 5px;
+    margin-left:-102px;
+    z-index:1;
+}
+/*end of footer */
+
+
+
+
+/*start of media screen*/ 
+@media  screen and (max-width:576px) {
+    .middle-top h3{
+        font-size: 14px;
+    }
+    .top-nav i{
+        font-size: 14px;
+    }
+    .left-top .search{
+        font-size: 18px;
+    }
+    .bottom-nav .nav-link{
+        font-size:10px;
+    }
+}
+footer .nav a{
+
+font-size:16px;
+}
+@media  screen and (min-width:577px) and (max-width:767px) {
+    .middle-top h3{
+        font-size: 18px;
+    }
+    .top-nav i{
+        font-size: 13px;
+    }
+    .left-top .search{
+        font-size: 15px;
+    }
+    .bottom-nav .nav-link{
+        font-size:14px;
+    }
+}
+@media  screen and (min-width:768px) and (max-width:992px) {
+
+}
+
+@media  screen and (min-width:992px) and (max-width:1200px) {
+    .middle-top h3{
+        font-size: 25px;
+    }
+    .top-nav i{
+        font-size: 16px;
+    }
+    .left-top .search{
+        font-size: 18px;
+    }
+    .bottom-nav .nav-link{
+        font-size:16px;
+    }
+   
+    footer .subscribe{
+        margin-left: 65%;
+        
+    }
+    footer .contact p{
+        width:150%;
+    }
+
+    }
+@media  screen and (min-width:1200px) {
+    .middle-top h3{
+        font-size: 25px;
+    }
+    .top-nav i{
+        font-size: 16px;
+    }
+    .left-top .search{
+        font-size: 18px;
+    }
+    .bottom-nav .nav-link{
+        font-size:17px;
+    }
+    footer .subscribe{
+        margin-left: 76%;
+    }
+    
+}
+/*end of media screen*/ 

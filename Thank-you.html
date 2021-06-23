@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Checkout</title>
+    <!--icon -->
+    <link rel="icon" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!--Animation library-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="Thank-you.css">
+</head>
+
+<body>
+    <!--start of nav-->
+
+    <nav>
+        <!--start of top nav-->
+        <div class="top-nav mb-3 py-4 navbar-expand-lg text-center container-fluid mt-4">
+            <div class="row align-items-center ml-1">
+                <div class="left-top col-4">
+                    <form class="form-inline">
+                        <i class="fas fa-search ml-auto mt-2" aria-hidden="true"></i>
+                        <input class="search form-control ml-1 w-75 w-xs-50" type="text" placeholder="Search"
+                          aria-label="Search">
+                      </form>
+                    
+                </div>
+                <div class="middle-top col-4">
+                    <h3>Mahdi Alsalem</h3>
+                </div>
+                <div class="right-top col-4">
+                    <a> <i class="fa fa-user ml-sm-5" aria-hidden="true"></i></a>
+                    <a> <i class="far fa-heart ml-sm-2" aria-hidden="true"></i></a>
+                    <a> <i class="fa fa-shopping-cart ml-sm-2" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--end of top nav-->
+        <hr>
+        <!--start of bottom nav-->
+      
+        <ul class="bottom-nav nav justify-content-center flex-xs-column flex-md-row py-3">
+            <li class="nav-item">
+                <a class="active nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">catalougue</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">new arriavals</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <!--end of bottom nav-->
+    </nav>
+    <hr>
+    <!--end of nav-->
+       <!--Thank you-->
+       
+        <div class="order-done mx-auto text-center">
+            <i class="mb-3 fa fa-check-circle"></i>
+            <h1 >Thank You! </h1>
+            <p>Your order was successfully completed</p>
+            <a href="shop.html">Back to shop</a>
+        </div>
+       <!--Thank you-->
+
+</body>
+
+</html>
+<!-- End your project here-->
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+    var a = document.getElementById('disc-50');
+    a.onclick = function () {
+        Clipboard_CopyTo("T9TTVSQB");
+        var div = document.getElementById('code-success');
+        div.style.display = 'block';
+        setTimeout(function () {
+            document.getElementById('code-success').style.display = 'none';
+        }, 900);
+    };
+
+    function Clipboard_CopyTo(value) {
+        var tempInput = document.createElement("input");
+        tempInput.value = value;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+    }
+</script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+
+</html>

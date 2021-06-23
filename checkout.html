@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Checkout</title>
+    <!--icon -->
+    <link rel="icon" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!--Animation library-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <!--start of nav-->
+
+    <nav>
+        <!--start of top nav-->
+        <div class="top-nav mb-3 py-4 navbar-expand-lg text-center container-fluid mt-4">
+            <div class="row align-items-center ml-1">
+                <div class="left-top col-4">
+                    <form class="form-inline">
+                        <i class="fas fa-search ml-auto mt-2" aria-hidden="true"></i>
+                        <input class="search form-control ml-1 w-75 w-xs-50" type="text" placeholder="Search"
+                          aria-label="Search">
+                      </form>
+                    
+                </div>
+                <div class="middle-top col-4">
+                    <h3>Mahdi Alsalem</h3>
+                </div>
+                <div class="right-top col-4">
+                    <a> <i class="fa fa-user ml-sm-5" aria-hidden="true"></i></a>
+                    <a> <i class="far fa-heart ml-sm-2" aria-hidden="true"></i></a>
+                    <a> <i class="fa fa-shopping-cart ml-sm-2" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--end of top nav-->
+        <hr>
+        <!--start of bottom nav-->
+      
+        <ul class="bottom-nav nav justify-content-center flex-xs-column flex-md-row py-3">
+            <li class="nav-item">
+                <a class="active nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">catalougue</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">new arriavals</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <!--end of bottom nav-->
+    </nav>
+    <!--end of nav-->
+          <!--title-->
+          <div class="title">
+            <span style="color:purple">Home</span> <span style="color:purple">/ Cart </span>/ Checkout
+        </div>
+        <!--title-->
+        <!--Returning-customer-->
+                <div class="customer border border-light mx-auto p-3 mt-5">
+                  <p>Returning Customer? <a href="#" style="color: purple;"> Click here</a> to login</p>
+                </div>
+        <!--Returning-customer-->
+        <!--Order information secttion-->
+        <section class="info mt-5 p-3">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="mt-3 col-xs-12 col-md-6">
+                <p class="h4">Billing Details</p>
+                <form class="billing-form  border border-light p-5" action="#!">
+                  <!--country-->
+                  <label for="Country">Country<span>*</span></label>
+                  <select class="form-control p-lg-3 mb-4 form-select" id="country" aria-label="Default select example">
+                    <option selected>Select Your country</option>
+                    <option value="1">Palestine</option>
+                    <option value="2">Egypt</option>
+                    <option value="3">Qatar</option>
+                  </select>
+                  <!-- Name -->
+                  <div class="d-flex flex-row">
+                    <label class="w-50" for="first-name">First name <span>*</span></label>
+                    <label class="w-50 ml-4" for="last-name">Last name <span>*</span></label>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <input type="text" id="first-name" class="form-control p-lg-3 mb-4" required>
+                    <input type="text" id="last-name" class="form-control mb-4 p-lg-3 ml-4" required>
+                  </div>
+        
+                  <!-- Company-->
+                  <label for="Company">Company name</label>
+                  <input type="text" id="Company" class="form-control mb-4 p-lg-3">
+        
+                  <!-- Address -->
+                  <label for="Address1">Address<span>*</span></label>
+                  <input type="text" required id="Address1" class="form-control p-lg-3 mb-3" placeholder="Street Address">
+                  <input type="text" id="Address1" class="form-control p-lg-3 mb-5"
+                    placeholder="Apartment , suite ,unit etc (Optional)">
+                  <!--state and Zip-->
+                  <div class="d-flex flex-row">
+                    <label class="w-50" for="state">State/ Country <span>*</span></label>
+                    <label class="w-50 ml-4" for="zip">Posta/Zip <span>*</span></label>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <input type="text" id="state" class="form-control p-lg-3 mb-4" required>
+                    <input type="text" id="zip" class="form-control mb-4 p-lg-3 ml-4" required>
+                  </div>
+                  <!--Email and phone-->
+                  <div class="d-flex flex-row">
+                    <label class="w-50" for="email">Email Address <span>*</span></label>
+                    <label class="w-50 ml-4" for="phone">Phone number <span>*</span></label>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <input type="text" id="email" class="form-control p-lg-3 mb-4" required>
+                    <input type="text" id="phone" class="form-control mb-4 p-lg-3 ml-4" required>
+                  </div>
+                  <!--Check box-->
+                  <div class="form-check mb-4 mt-4">
+                    <input class="form-check-input" type="checkbox" value="" id="create-account">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Create an account?
+                    </label>
+                  </div>
+                  <div class="form-check mb-4 mt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="different-address">
+                    <label class="form-check-label" for="defaultCheck2">
+                      Ship to A differnet Address?
+                    </label>
+                  </div>
+                  <!-- order notes -->
+                  <div class="form-group mt-5">
+                    <label for="mssg">order notes</label>
+                    <textarea class="form-control rounded-0" id="mssg" rows="5" placeholder="Write Your notes here"
+                      required></textarea>
+                  </div>
+        
+                </form>
+              </div>
+              <div class="mt-3 col-xs-12 col-md-6 d-flex flex-column justify-content-between">
+                <!--Coupon-->
+                <div class="coupon mb-5">
+                  <p class="h4 mb-2">Coupon Code</p>
+                  <form class="border border-light p-5" action="#!">
+                    <!--coupone code form-->
+                    <label for="Country">Have a Coupon? Enter the code here</label>
+                
+                    <div class="input-group mb-3">
+                      <input type="email" class="em form-control" placeholder="Coupon Code">
+                      <div class="input-group-append">
+                        <button class="btn1" type="button">Apply</button>
+                      </div>             
+                  </form>
+                
+                </div>
+                <!--order details-->
+                <div class="order-details mt-5">
+                  <p class="h4 mb-2">Your Order</p>
+                  <div class="order-table border border-light p-5">
+
+                  <!--order table-->
+                    <table class="table">
+                    <thead>
+                      <tr>
+                        <th style="font-weight:900;" scope="col">Prodcut</th>
+                        <th style="font-weight:900;" scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Product 1 X 2</th>
+                        <td>170$</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">Product 2 X 1</th>
+                        <td>170$</td>
+                        
+                      </tr>
+                      <tr>
+                        <th style="font-weight:900;" scope="row">Cart subtotal</th>
+                        <td style="font-weight:900;" >140$</td>
+                        
+                      </tr>
+                      <tr>
+                        <th style="font-weight:900;" scope="row">Order Total</th>
+                        <td style="font-weight:900;">140$</td>
+                        
+                      </tr>
+                    
+                      
+                    </tbody>
+                  </table>
+                  
+                  <div class="payment-method  mt-4 p-3 border  border-light">Direct Bank Transfer</div>
+                  <div class="payment-method  mt-3 p-3 border border-light">Cheque Payment</div>
+                  <div class="payment-method  mt-3 mb-2 p-3 border border-light">Paypal</div>
+                  <div class="send-button">
+                    <a href="Thank-you.html" type="button" traget="_blank" class="mt-5 btn btn-block" type="submit">Place order</a>
+                </div>
+                </div>
+                  
+
+                </div>
+                </div>
+                </div>
+                </div>
+        </section>
+      <!--order information section-->
+      
+<hr>
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <!--navigations-->
+            <div class="nav col-lg-6 col-md-8 col-sm-12 col-xs-12 mt-3">
+              <div class="container-fluid">
+                <h5>Navigations</h5>
+    
+                <div class="row">
+                  <div class="col-4">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">Sell online</a>
+                      </li>
+                      <li>
+                        <a href="#!">Features</a>
+                      </li>
+                      <li>
+                        <a href="#!">Shopping Cart</a>
+                      </li>
+                      <li>
+                        <a href="#!">Builder Store</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">Mobile Commerce</a>
+                      </li>
+                      <li>
+                        <a href="#!">Drop-shopping</a>
+                      </li>
+                      <li>
+                        <a href="#!">Website Development</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#!">Point of sale </a>
+                      </li>
+                      <li>
+                        <a href="#!">Software</a>
+                      </li>
+                      <li>
+                        <a href="#!">Hardware</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--navigations-->
+            <!--Promo-->
+            <div class="promo col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-3">
+              <h5>Promo</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <img src="imgs/footer.jpg" class="footer-img" alt="shoes">
+                </li>
+                <li>
+                  <a href="#">Finding your perfect shoes</a>
+                  <p>promo form nuwary 15-25,2019</p>
+                </li>
+    
+              </ul>
+            </div>
+            <!--promo-->
+            <!--contact-->
+            <div class="contact col-lg-3 col-md-6  col-sm-6 col-xs-12 mt-3">
+              <h5>Contact info</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <p><i class="fa fa-map-marker-alt mr-3"></i>16 St.Birzeit,Ramallah,Palestine</p>
+                </li>
+                <li>
+                  <p style="color:grey"><i class="fa fa-phone mr-3"></i>0595580244</p>
+                </li>
+                <li>
+                  <p><i class="fa fa-envelope mr-3"></i>Alsalem.mahdi94@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--contact-->
+            <!--subscribe-->
+            <div class="subscribe col-lg-5 col-xl-3 col-md-6 col-sm-8 col-xs-12 col-sm-10 mt-3">
+              <h5>Subscribe</h5>
+              <ul class="list-unstyled">
+    
+                <li>
+                  <div class="input-group mb-3">
+                    <input type="email" class="em form-control" placeholder="Email">
+                    <div class="input-group-append">
+                      <button class="btn1" type="button">send</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--subscribe-->
+            <!--copyright-->
+            <div class="footer-copyright text-center col-12 py-5">Copyright ©2021 All rights reserved | this template is
+              made with <i class="fa fa-heart"></i> by Mahdi Alsalem.
+            </div>
+            <!--copyright-->
+    
+          </div>
+        </div>
+      </footer>
+    
+    <!--Footer-->
+
+</body>
+
+</html>
+<!-- End your project here-->
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+    var a = document.getElementById('disc-50');
+    a.onclick = function () {
+        Clipboard_CopyTo("T9TTVSQB");
+        var div = document.getElementById('code-success');
+        div.style.display = 'block';
+        setTimeout(function () {
+            document.getElementById('code-success').style.display = 'none';
+        }, 900);
+    };
+
+    function Clipboard_CopyTo(value) {
+        var tempInput = document.createElement("input");
+        tempInput.value = value;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+    }
+</script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+
+</html>
