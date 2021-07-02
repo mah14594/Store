@@ -12,6 +12,8 @@ body{
 }
 /*start of nav*/
 /*Top nav*/ 
+/*start of nav*/
+/*Top nav*/ 
 
 .top-nav i{
     font-size:18px;
@@ -56,13 +58,9 @@ color: black;
     color:purple;
     font-weight: 600;
 }
-/*botom nav*/ 
-.title{
-    background-color:rgb(247, 244, 244) ;
-    padding:20px;
-    font-size: 20px;
 
-}
+/*end of nav*/
+
 /*start of info*/
 .info .h4{
     font-weight: 900;
@@ -184,6 +182,25 @@ footer .subscribe .btn1{
     z-index:1;
 }
 /*end of footer */
+/*start of media screen*/ 
+@media  screen and (max-width:576px) {
+    .middle-top h3{
+        font-size: 14px;
+    }
+    .top-nav i{
+        font-size: 14px;
+    }
+    .left-top .search{
+        font-size: 18px;
+    }
+    .bottom-nav .nav-link{
+        font-size:10px;
+    }
+}
+footer .nav a{
+
+font-size:16px;
+}
 @media  screen and (min-width:577px) and (max-width:767px) {
     .middle-top h3{
         font-size: 18px;

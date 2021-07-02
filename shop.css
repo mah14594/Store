@@ -185,9 +185,7 @@ padding-left: 30px;
 /*head*/
 /*products*/
 
-.products{
-    padding-left:30px ;
-}
+
 .products .title hr{
     border-top:4px solid purple;
     width:8%;
@@ -342,6 +340,9 @@ footer .subscribe .btn1{
     }
     .bottom-nav .nav-link{
         font-size:10px;
+    }
+    .head-title{
+        margin-left:-28px;
     }
     footer .nav a{
 
