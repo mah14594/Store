@@ -123,7 +123,7 @@ header .header-img{
 /*start of footer*/
 footer{
     margin-top:10px;
-    padding:70px 50px 70px 70px; 
+    padding:10px;
 }
 
 footer li{
@@ -135,7 +135,7 @@ footer h5{
 
 footer .nav a{
     color:grey;
-    font-size: 18px;
+    font-size: 16px;
 }
 footer .nav a:hover{
     color:purple;
@@ -185,8 +185,6 @@ footer .subscribe .btn1{
     z-index:1;
 }
 /*end of footer */
-
-
 
 
 /*start of media screen*/ 
