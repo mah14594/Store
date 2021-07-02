@@ -185,6 +185,7 @@ header p{
 .featured{
     background-color:rgb(236, 233, 233) ;
     margin-top:50px;
+    padding-bottom: 40px;
 }
 .featured .title hr{
     border-top:4px solid purple;
