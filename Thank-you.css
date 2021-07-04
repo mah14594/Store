@@ -160,6 +160,37 @@ footer .subscribe .btn1{
     z-index:1;
 }
 /*end of footer */
+@media  screen and (max-width:576px) {
+    .middle-top h3{
+        font-size: 14px;
+    }
+    .top-nav i{
+        font-size: 14px;
+    }
+    .left-top .search{
+        font-size: 16px;
+    }
+    .bottom-nav .nav-link{
+        font-size:10px;
+    }
+    .head-title{
+        margin-left:-28px;
+    }
+    footer .nav a{
+
+        font-size:16px;
+        }
+    .main .products .card{
+            width: 100%;
+            margin-top:30px;
+            border: none;
+        } 
+    .main  .products .card img{
+            height: 200px;
+            width:100%;
+        }
+        
+}
 @media  screen and (min-width:577px) and (max-width:767px) {
     .middle-top h3{
         font-size: 18px;

@@ -28,6 +28,7 @@ body{
     color:rgb(170, 169, 169);
     color:black;
     padding-top:10px;
+    
 }
 
 
@@ -95,7 +96,7 @@ color: black;
 /*start of footer*/
 footer{
     margin-top:10px;
-    padding:70px 50px 70px 70px; 
+    padding:10px;
 }
 
 footer li{
@@ -107,7 +108,7 @@ footer h5{
 
 footer .nav a{
     color:grey;
-    font-size: 18px;
+    font-size: 16px;
 }
 footer .nav a:hover{
     color:purple;
@@ -170,7 +171,7 @@ footer .subscribe .btn1{
         font-size: 14px;
     }
     .left-top .search{
-        font-size: 18px;
+        font-size: 16px;
     }
     .bottom-nav .nav-link{
         font-size:10px;
