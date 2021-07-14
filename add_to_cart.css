@@ -227,6 +227,9 @@ footer .subscribe .btn1{
 }
 /*end of footer */
 @media  screen and (max-width:576px) {
+.cart-table{
+    overflow-x: scroll;
+}
     .middle-top h3{
         font-size: 14px;
     }
