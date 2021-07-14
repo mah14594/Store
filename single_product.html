@@ -127,9 +127,9 @@
             <label class="form-check-label" for="inlineRadio3">Extra Large</label>
           </div>
         <div class="quantity mt-5 d-flex flex-row justify-content-between align-items-center">
-            <button class="minus">-</button>
-            <input class="num text-center" type="text" value="1">
-            <button class="plus">+</button>
+            <button onclick="decrease()" class="minus">-</button>
+            <input id="quant" class="quant num text-center" type="text" value="1">
+            <button onclick= "increase()" class="plus">+</button>
         </div>
           <div>
           <a  href="add_to_cart.html" class="mt-5 btn">Add To Cart</a>
@@ -340,7 +340,7 @@
   </footer>
   <!--end of footer-->
 
-</body>
+  <script src="main.js"></script>
 
 </html>
 <!-- End your project here-->

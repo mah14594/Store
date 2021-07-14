@@ -10,7 +10,53 @@ body{
     scroll-behavior: smooth;
     height:100vh;
 }
+
 /*start of nav*/
+/*side nav*/
+.left-side{
+    position: fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    background-color: rgb(191, 196, 199);
+    text-align: center;
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    
+}
+.left-side img{
+    margin-top: 20px;
+    width:60%;
+    border-radius: 50%;
+}
+.left-side p{
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+
+}
+.left-side h3{
+    margin-top: 20px;
+    font-weight: 700;
+    color: rgb(0, 37, 250);
+}
+.left-side .fab{
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+}
+
+.left-side #close{
+    position:absolute;
+    top:0;
+    right:3%;
+    font-size: 16px;
+    margin-left: 50px;
+    
+}
+
+/*side nav*/
 /*Top nav*/ 
 
 .top-nav i{
