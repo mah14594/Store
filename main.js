@@ -1,3 +1,4 @@
+
 //single product and add to cart pages
 function decrease(){
     var quan=parseInt (document.getElementById("quant").value) ;
